@@ -3,9 +3,7 @@
 
 using namespace PriceCal;
 
-double PriceCalculator::acceptCash(const DiscountType type,
-                                   const double money) const noexcept {
-
+double PriceCalculator::acceptCash(const DiscountType type, const double money) const noexcept {
   double ans = 0.f;
   switch (type) {
     case DiscountType::CASS_NORMAL:
