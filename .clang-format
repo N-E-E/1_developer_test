@@ -1,0 +1,7 @@
+---
+BasedOnStyle: Google
+---
+Language: Cpp
+CommentPragmas: "^ NOLINT:"
+IndentWidth: 2
+TabWidth: 4
