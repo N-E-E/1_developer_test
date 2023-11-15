@@ -9,7 +9,13 @@ double PriceCalculator::acceptCash(const DiscountType type, const double money) 
     case DiscountType::CASS_NORMAL:
       ans = money;
       break;
-    case DiscountType::CASS_DISCOUNT:
+    case DiscountType::CASS_DISCOUNT_NINE:
+      ans = money * 0.9;
+      break;
+    case DiscountType::CASS_DISCOUNT_EIGHT:
+      ans = money * 0.9;
+      break;
+    case DiscountType::CASS_DISCOUNT_SEVEN:
       ans = money * 0.9;
       break;
     case DiscountType::CASS_DIMINISH:
