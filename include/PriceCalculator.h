@@ -2,7 +2,7 @@
 
 namespace PriceCal {
 
-enum DiscountType { CASS_NORMAL, CASS_DISCOUNT, CASS_DIMINISH };
+enum DiscountType { CASS_NORMAL, CASS_DISCOUNT_NINE, CASS_DISCOUNT_EIGHT, CASS_DISCOUNT_SEVEN, CASS_DIMINISH };
 
 class PriceCalculator final {
 public:
