@@ -17,15 +17,39 @@ TEST(PriceCalculator, normal_return_100_when_given_100) {
 }
 
 
-TEST(PriceCalculator, discount_return_90_when_given_100) {
+TEST(PriceCalculator, discount9_return_90_when_given_100) {
   // given
   PriceCalculator priceCalculator;
 
   // when
-  double cash = priceCalculator.acceptCash(DiscountType::CASS_DISCOUNT, 100.0);
+  double cash = priceCalculator.acceptCash(DiscountType::CASS_DISCOUNT_NINE, 100.0);
 
   // then
   EXPECT_DOUBLE_EQ(90, cash);
+}
+
+
+TEST(PriceCalculator, discount8_return_80_when_given_100) {
+  // given
+  PriceCalculator priceCalculator;
+
+  // when
+  double cash = priceCalculator.acceptCash(DiscountType::CASS_DISCOUNT_EIGHT, 100.0);
+
+  // then
+  EXPECT_DOUBLE_EQ(80, cash);
+}
+
+
+TEST(PriceCalculator, discount7_return_70_when_given_100) {
+  // given
+  PriceCalculator priceCalculator;
+
+  // when
+  double cash = priceCalculator.acceptCash(DiscountType::CASS_DISCOUNT_SEVEN, 100.0);
+
+  // then
+  EXPECT_DOUBLE_EQ(70, cash);
 }
 
 
